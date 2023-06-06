@@ -1,4 +1,4 @@
 # k8s-sample
 
-楽しくk8sを学びたいチャンネル
+Manifest and config files for applications deployed on hihumikan's k8s cluster
   
