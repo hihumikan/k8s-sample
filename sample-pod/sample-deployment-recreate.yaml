@@ -6,15 +6,12 @@ metadata:
   labels:
     app: sample-app
 spec:
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: sample-app
   replicas: 3
-  strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
   template:
     metadata:
       labels:
