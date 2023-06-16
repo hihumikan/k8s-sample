@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-externaldns
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.13
+  hostAliases:
+  - ip: 8.8.8.8
+    hostnames:
+    - google-dns
+    - google-public-dns
+    
